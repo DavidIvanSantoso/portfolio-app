@@ -3,6 +3,7 @@ import { Col, Container, Image, Row } from "react-bootstrap";
 import "../LandingPage/LandingPage.css";
 import profileImg from "../assets/ProfileImg/profilepic.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect, useState } from "react";
 // import { FaVuejs, FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import {
   faInstagram,
@@ -24,6 +25,49 @@ function LandingPage() {
   //   { icon: FaHtml5, name: "HTML" },
   //   { icon: FaCss3Alt, name: "CSS" },
   // ];
+  const messages = ["Hi!", "안녕하세요!", "Selamat Datang!"];
+  const [displayedText, setDisplayedText] = useState("");
+  const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
+  const [typing, setTyping] = useState(true);
+  const typingSpeed = 50; // Typing speed (ms)
+  const pauseBetweenMessages = 1500; // Pause between messages (ms)
+
+  //typewriting effect
+  useEffect(() => {
+    let timeout;
+
+    if (typing) {
+      // Typing effect
+      const currentMessage = messages[currentMessageIndex];
+      if (displayedText.length < currentMessage.length) {
+        timeout = setTimeout(() => {
+          setDisplayedText(currentMessage.slice(0, displayedText.length + 1));
+        }, typingSpeed);
+      } else {
+        // Pause before erasing
+        timeout = setTimeout(() => {
+          setTyping(false);
+        }, pauseBetweenMessages);
+      }
+    } else {
+      // Erasing effect
+      if (displayedText.length > 0) {
+        timeout = setTimeout(() => {
+          setDisplayedText(displayedText.slice(0, -1));
+        }, typingSpeed);
+      } else {
+        // Move to the next message and start typing again
+        setCurrentMessageIndex(
+          (prevIndex) => (prevIndex + 1) % messages.length
+        );
+        setTyping(true);
+      }
+    }
+
+    // Cleanup timeout on unmount
+    return () => clearTimeout(timeout);
+  }, [displayedText, typing, messages, currentMessageIndex]);
+
   return (
     <>
       <Container
@@ -53,9 +97,7 @@ function LandingPage() {
           <Col xs={12} md={6} className="text-center text-md-start">
             <Row>
               <div className="profile-text">
-                <h1>Hi!</h1>
-                <h1>안녕하세요!</h1>
-                <h1>Selamat Datang!</h1>
+                <h1>{displayedText}</h1>
               </div>
             </Row>
             <Row>
@@ -70,27 +112,27 @@ function LandingPage() {
               </div>
             </Row>
             <Row>
-              <div className="social-media-blob mt-3">
+              <div className="mt-3">
                 <FontAwesomeIcon
-                  className="me-3"
+                  className="me-3 social-media-blob"
                   icon={faInstagram}
                   size="2x"
                   style={{ color: "#E1306C" }}
                 />
                 <FontAwesomeIcon
-                  className="mx-3"
+                  className="mx-3 social-media-blob"
                   icon={faGithub}
                   size="2x"
                   style={{ color: "#E1306C" }}
                 />
                 <FontAwesomeIcon
-                  className="mx-3"
+                  className="mx-3 social-media-blob"
                   icon={faLinkedin}
                   size="2x"
                   style={{ color: "#E1306C" }}
                 />
                 <FontAwesomeIcon
-                  className="mx-3"
+                  className="mx-3 social-media-blob"
                   icon={faTwitter}
                   size="2x"
                   style={{ color: "#E1306C" }}

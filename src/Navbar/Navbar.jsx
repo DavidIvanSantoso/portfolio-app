@@ -5,7 +5,7 @@ import "../Navbar/Navbar.css";
 function NavbarTop() {
   return (
     <>
-      <Container fluid style={{ padding: "0" }}>
+      <Container fluid style={{ padding: "0", backgroundColor: "#5c8374" }}>
         <Navbar expand="lg" className="custom-navbar">
           <Container>
             <Navbar.Brand href="#home" className="nav-brand-custom">
@@ -21,10 +21,10 @@ function NavbarTop() {
                   Profile
                 </Nav.Link>
                 <Nav.Link href="#features" className="nav-link-custom">
-                  Work Experience
+                  Projects
                 </Nav.Link>
                 <Nav.Link href="#pricing" className="nav-link-custom">
-                  Projects
+                  Work Experience
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>

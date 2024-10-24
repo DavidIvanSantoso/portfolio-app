@@ -1,10 +1,15 @@
 .nav-link-custom {
   color: #eef5ff;
+  font-weight: bold;
 }
 .nav-link-custom:hover,
-.nav-brand-custom :hover {
-  color: #9ec8b9;
+.nav-brand-custom:hover {
+  color: #092635;
 }
 .nav-brand-custom {
   color: #eef5ff;
+  font-weight: bold;
+}
+body {
+  font-family: "Roboto", sans-serif;
 }

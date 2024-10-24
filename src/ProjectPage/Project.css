@@ -19,3 +19,9 @@
 .project-showcase {
   color: white;
 }
+.card-body-custom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px; /* Adjust as needed */
+}

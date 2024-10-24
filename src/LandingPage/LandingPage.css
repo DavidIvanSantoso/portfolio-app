@@ -18,3 +18,28 @@ body {
 .wave-svg {
   margin-bottom: -2px;
 }
+.social-media-blob:hover {
+  background-color: aliceblue;
+}
+.profile-text {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 2.5rem; /* Set a fixed height based on the font size */
+}
+.profile-text h1 {
+  font-family: "Roboto", sans-serif; /* or your preferred font */
+  font-size: 3rem;
+  color: white; /* Change this to your preferred color */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflow */
+  border-right: 2px solid; /* Cursor effect */
+  animation: blink-caret 0.75s step-end infinite; /* Optional cursor blink effect */
+  margin: 0;
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent; /* Blink effect */
+  }
+}
