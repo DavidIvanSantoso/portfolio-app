@@ -3,7 +3,7 @@ import { Col, Container, Image, Row } from "react-bootstrap";
 import "../LandingPage/LandingPage.css";
 import profileImg from "../assets/ProfileImg/profilepic.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { FaVuejs, FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa";
+// import { FaVuejs, FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import {
   faInstagram,
   faTwitter,
@@ -11,22 +11,32 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
-import { Slide } from "react-awesome-reveal";
-import WorkExperience from "../WorkExperience/WorkExperience";
+// import { Slide } from "react-awesome-reveal";
+// import WorkExperience from "../WorkExperience/WorkExperience";
 import "./SkillsShowcase.css";
+import Skills from "../Skills/Skills";
+import Project from "../ProjectPage/Project";
 
 function LandingPage() {
-  const skills = [
-    { icon: FaVuejs, name: "Vue.js" },
-    { icon: FaReact, name: "React" },
-    { icon: FaHtml5, name: "HTML" },
-    { icon: FaCss3Alt, name: "CSS" },
-  ];
+  // const skills = [
+  //   { icon: FaVuejs, name: "Vue.js" },
+  //   { icon: FaReact, name: "React" },
+  //   { icon: FaHtml5, name: "HTML" },
+  //   { icon: FaCss3Alt, name: "CSS" },
+  // ];
   return (
     <>
-      <Container fluid className="introduction">
+      <Container
+        fluid
+        className="introduction"
+        style={{ padding: "0", margin: "0" }}
+      >
         <Row>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+            width={"100%"}
+          >
             <path
               fill="#5C8374"
               fillOpacity="1"
@@ -87,7 +97,7 @@ function LandingPage() {
                 />
               </div>
             </Row>
-            <Row>
+            {/* <Row>
               <div className="skills-container">
                 <Slide direction="right" cascade damping={0.1}>
                   {skills.map((skill, index) => {
@@ -111,7 +121,7 @@ function LandingPage() {
                   })}
                 </Slide>
               </div>
-            </Row>
+            </Row> */}
           </Col>
         </Row>
         <Row className="wave-svg">
@@ -123,8 +133,27 @@ function LandingPage() {
             ></path>
           </svg>
         </Row>
-        <Row className="work-exp">
+        <Row className="skills-page">
+          <Skills></Skills>
+        </Row>
+        <Row>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+            width={"100%"}
+          >
+            <path
+              fill="#5C8374"
+              fillOpacity="1"
+              d="M0,256L20,234.7C40,213,80,171,120,133.3C160,96,200,64,240,48C280,32,320,32,360,58.7C400,85,440,139,480,149.3C520,160,560,128,600,149.3C640,171,680,245,720,240C760,235,800,149,840,117.3C880,85,920,107,960,128C1000,149,1040,171,1080,165.3C1120,160,1160,128,1200,138.7C1240,149,1280,203,1320,208C1360,213,1400,171,1420,149.3L1440,128L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"
+            ></path>
+          </svg>
+        </Row>
+        {/* <Row className="work-exp">
           <WorkExperience></WorkExperience>
+        </Row> */}
+        <Row className="projects">
+          <Project></Project>
         </Row>
       </Container>
     </>

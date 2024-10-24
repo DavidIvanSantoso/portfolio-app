@@ -1,0 +1,21 @@
+.project-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-title .line {
+  flex: 1;
+  height: 4px;
+  background-color: #5c8374;
+  margin: 0 15px;
+}
+
+.project-title h1 {
+  text-align: center;
+  white-space: nowrap;
+  color: white; /* Ensure the text color is white to match your design */
+}
+.project-showcase {
+  color: white;
+}

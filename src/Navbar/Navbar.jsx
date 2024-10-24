@@ -5,7 +5,7 @@ import "../Navbar/Navbar.css";
 function NavbarTop() {
   return (
     <>
-      <Container fluid>
+      <Container fluid style={{ padding: "0" }}>
         <Navbar expand="lg" className="custom-navbar">
           <Container>
             <Navbar.Brand href="#home" className="nav-brand-custom">

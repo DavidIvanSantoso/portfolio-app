@@ -1,0 +1,36 @@
+.programming-skills {
+  background-color: #5c8374;
+  color: azure;
+}
+.bubble-icon {
+  width: 100px; /* Same size or slightly larger than the icon */
+  height: 100px;
+  border-radius: 50%;
+  background-color: #092635; /* Optional: background color for the circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+.card-info {
+  background-color: #1b4242;
+  color: azure;
+}
+.skills-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-title .line {
+  flex: 1;
+  height: 4px;
+  background-color: #092635;
+  margin: 0 15px;
+}
+
+.skills-title h1 {
+  text-align: center;
+  white-space: nowrap;
+  color: white; /* Ensure the text color is white to match your design */
+}
