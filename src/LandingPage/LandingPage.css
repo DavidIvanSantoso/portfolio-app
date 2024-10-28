@@ -19,7 +19,8 @@ body {
   margin-bottom: -2px;
 }
 .social-media-blob:hover {
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
+  color: #eef5ff;
 }
 .profile-text {
   display: flex;

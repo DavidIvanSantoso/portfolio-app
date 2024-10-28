@@ -17,13 +17,13 @@ function NavbarTop() {
               className="justify-content-end"
             >
               <Nav>
-                <Nav.Link href="#home" className="nav-link-custom">
+                <Nav.Link href="#profile-page" className="nav-link-custom">
                   Profile
                 </Nav.Link>
-                <Nav.Link href="#features" className="nav-link-custom">
+                <Nav.Link href="#project-page" className="nav-link-custom">
                   Projects
                 </Nav.Link>
-                <Nav.Link href="#pricing" className="nav-link-custom">
+                <Nav.Link href="#work-page" className="nav-link-custom">
                   Work Experience
                 </Nav.Link>
               </Nav>

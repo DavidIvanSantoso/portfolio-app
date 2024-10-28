@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Container, Row, Col } from "react-bootstrap";
 import "../WorkExperience/WorkExperience.css";
 function WorkExperience() {

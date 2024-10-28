@@ -4,6 +4,7 @@ import "../LandingPage/LandingPage.css";
 import profileImg from "../assets/ProfileImg/profilepic.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
+import NavbarTop from "../Navbar/Navbar";
 // import { FaVuejs, FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import {
   faInstagram,
@@ -70,6 +71,7 @@ function LandingPage() {
 
   return (
     <>
+      <NavbarTop></NavbarTop>
       <Container
         fluid
         className="introduction"
@@ -88,7 +90,10 @@ function LandingPage() {
             ></path>
           </svg>
         </Row>
-        <Row className="align-items-center justify-content-center">
+        <Row
+          className="align-items-center justify-content-center"
+          id="profile-page"
+        >
           <Col xs={12} md={6} className="text-center mb-3 mb-md-0">
             <div className="profile-picture">
               <Image src={profileImg} width="70%" fluid rounded />
@@ -117,25 +122,25 @@ function LandingPage() {
                   className="me-3 social-media-blob"
                   icon={faInstagram}
                   size="2x"
-                  style={{ color: "#E1306C" }}
+                  style={{ color: "#5c8374" }}
                 />
                 <FontAwesomeIcon
                   className="mx-3 social-media-blob"
                   icon={faGithub}
                   size="2x"
-                  style={{ color: "#E1306C" }}
+                  style={{ color: "5c8374" }}
                 />
                 <FontAwesomeIcon
                   className="mx-3 social-media-blob"
                   icon={faLinkedin}
                   size="2x"
-                  style={{ color: "#E1306C" }}
+                  style={{ color: "#5c8374" }}
                 />
                 <FontAwesomeIcon
                   className="mx-3 social-media-blob"
                   icon={faTwitter}
                   size="2x"
-                  style={{ color: "#E1306C" }}
+                  style={{ color: "#5c8374" }}
                 />
               </div>
             </Row>
@@ -175,7 +180,7 @@ function LandingPage() {
             ></path>
           </svg>
         </Row>
-        <Row className="skills-page">
+        <Row className="skills-page" id="skill-page">
           <Skills></Skills>
         </Row>
         <Row>
@@ -194,7 +199,7 @@ function LandingPage() {
         {/* <Row className="work-exp">
           <WorkExperience></WorkExperience>
         </Row> */}
-        <Row className="projects">
+        <Row className="projects" id="project-page">
           <Project></Project>
         </Row>
       </Container>
