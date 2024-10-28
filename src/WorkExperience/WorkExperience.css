@@ -3,3 +3,26 @@
   padding-left: 10px;
   background-color: #5c8374;
 }
+.project-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-title .line {
+  flex: 1;
+  height: 4px;
+  background-color: #092635;
+  margin: 0 15px;
+}
+
+.project-title h1 {
+  text-align: center;
+  white-space: nowrap;
+  color: white; /* Ensure the text color is white to match your design */
+}
+
+.vertical-timeline-element--work:hover .vertical-timeline-element-content {
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.5); /* Customize shadow as needed */
+  transition: box-shadow 0.3s ease-in-out;
+}

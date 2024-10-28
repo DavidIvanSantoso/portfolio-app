@@ -15,9 +15,17 @@ body {
 .wave-svg svg {
   display: block;
 }
-.wave-svg {
-  margin-bottom: -2px;
+
+.hover-icon {
+  transition: color 0.3s ease; /* Smooth transition */
 }
+
+.hover-icon:hover {
+  color: #fff !important; /* Change this to your desired hover color */
+}
+/* .wave-svg {
+  margin-bottom: -2px;
+} */
 .social-media-blob:hover {
   /* background-color: aliceblue; */
   color: #eef5ff;

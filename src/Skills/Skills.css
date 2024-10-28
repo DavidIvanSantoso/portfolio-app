@@ -16,6 +16,10 @@
   background-color: #1b4242;
   color: azure;
 }
+.card-info:hover {
+  box-shadow: 0px 4px 20px rgb(254, 254, 254); /* Customize shadow as needed */
+  transition: box-shadow 0.3s ease-in-out;
+}
 .skills-title {
   display: flex;
   align-items: center;

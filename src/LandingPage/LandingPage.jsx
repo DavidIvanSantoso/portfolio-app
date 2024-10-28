@@ -18,6 +18,7 @@ import {
 import "./SkillsShowcase.css";
 import Skills from "../Skills/Skills";
 import Project from "../ProjectPage/Project";
+import WorkExperience from "../WorkExperience/WorkExperience";
 
 function LandingPage() {
   // const skills = [
@@ -118,30 +119,58 @@ function LandingPage() {
             </Row>
             <Row>
               <div className="mt-3">
-                <FontAwesomeIcon
-                  className="me-3 social-media-blob"
-                  icon={faInstagram}
-                  size="2x"
-                  style={{ color: "#5c8374" }}
-                />
-                <FontAwesomeIcon
-                  className="mx-3 social-media-blob"
-                  icon={faGithub}
-                  size="2x"
-                  style={{ color: "5c8374" }}
-                />
-                <FontAwesomeIcon
-                  className="mx-3 social-media-blob"
-                  icon={faLinkedin}
-                  size="2x"
-                  style={{ color: "#5c8374" }}
-                />
-                <FontAwesomeIcon
-                  className="mx-3 social-media-blob"
-                  icon={faTwitter}
-                  size="2x"
-                  style={{ color: "#5c8374" }}
-                />
+                <a
+                  href="https://www.instagram.com/_davidivan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    className="me-3 social-media-blob hover-icon"
+                    icon={faInstagram}
+                    id="social-bubble"
+                    size="2x"
+                    style={{ color: "#5c8374" }}
+                  />
+                </a>
+                <a
+                  href="https://github.com/DavidIvanSantoso"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    className="mx-3 social-media-blob hover-icon"
+                    id="social-bubble"
+                    icon={faGithub}
+                    size="2x"
+                    style={{ color: "5c8374" }}
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/david-ivan6900"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    className="mx-3 social-media-blob hover-icon"
+                    icon={faLinkedin}
+                    id="social-bubble"
+                    size="2x"
+                    style={{ color: "#5c8374" }}
+                  />
+                </a>
+                <a
+                  href="https://x.com/dapittipann"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    className="mx-3 social-media-blob hover-icon"
+                    icon={faTwitter}
+                    id="social-bubble"
+                    size="2x"
+                    style={{ color: "#5c8374" }}
+                  />
+                </a>
               </div>
             </Row>
             {/* <Row>
@@ -201,6 +230,18 @@ function LandingPage() {
         </Row> */}
         <Row className="projects" id="project-page">
           <Project></Project>
+        </Row>
+        <Row className="wave-svg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#5C8374"
+              fillOpacity="1"
+              d="M0,96L17.1,101.3C34.3,107,69,117,103,117.3C137.1,117,171,107,206,138.7C240,171,274,245,309,272C342.9,299,377,277,411,229.3C445.7,181,480,107,514,106.7C548.6,107,583,181,617,197.3C651.4,213,686,171,720,165.3C754.3,160,789,192,823,224C857.1,256,891,288,926,282.7C960,277,994,235,1029,218.7C1062.9,203,1097,213,1131,181.3C1165.7,149,1200,75,1234,69.3C1268.6,64,1303,128,1337,170.7C1371.4,213,1406,235,1423,245.3L1440,256L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z"
+            ></path>
+          </svg>
+        </Row>
+        <Row className="work-page" id="work-page">
+          <WorkExperience></WorkExperience>
         </Row>
       </Container>
     </>

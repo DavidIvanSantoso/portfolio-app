@@ -26,7 +26,7 @@ import shapeRec from "../assets/shapeRec.png";
 function Project() {
   return (
     <>
-      <Container>
+      <Container className="pb-3">
         <div className="project px-5">
           <Row>
             <div className="project-title">
@@ -46,7 +46,7 @@ function Project() {
               <Carousel>
                 <Carousel.Item>
                   <Row>
-                    <Col md={4}>
+                    <Col xs={12} sm={6} md={4}>
                       <Card style={{ width: "100%", height: "100%" }}>
                         <Card.Img variant="top" src={tripleS} />
                         <Card.Body
@@ -56,6 +56,7 @@ function Project() {
                             flexDirection: "column",
                             justifyContent: "space-between",
                             height: "300px",
+                            overflowY: "auto", // Enable scrolling
                           }}
                         >
                           <Card.Title>tripleS Wikipedia</Card.Title>
@@ -72,7 +73,7 @@ function Project() {
                         </Card.Body>
                       </Card>
                     </Col>
-                    <Col md={4}>
+                    <Col xs={12} sm={6} md={4}>
                       <Card style={{ width: "100%", height: "100%" }}>
                         <Card.Img variant="top" src={iotPlatform} />
                         <Card.Body
@@ -82,6 +83,7 @@ function Project() {
                             flexDirection: "column",
                             justifyContent: "space-between",
                             height: "300px",
+                            overflowY: "auto", // Enable scrolling
                           }}
                         >
                           <Card.Title>Iot Platform</Card.Title>
@@ -106,7 +108,7 @@ function Project() {
                         </Card.Body>
                       </Card>
                     </Col>
-                    <Col md={4}>
+                    <Col xs={12} sm={6} md={4}>
                       <Card style={{ width: "100%", height: "100%" }}>
                         <Card.Img variant="top" src={myCovidtest} />
                         <Card.Body
@@ -116,6 +118,7 @@ function Project() {
                             flexDirection: "column",
                             justifyContent: "space-between",
                             height: "300px",
+                            overflowY: "auto", // Enable scrolling
                           }}
                         >
                           <Card.Title>My Covid Test</Card.Title>
@@ -137,7 +140,7 @@ function Project() {
                 {/* groupbaru */}
                 <Carousel.Item>
                   <Row>
-                    <Col md={4}>
+                    <Col xs={12} sm={6} md={4}>
                       <Card style={{ width: "100%", height: "100%" }}>
                         <Card.Img variant="top" src={shapeRec} />
                         <Card.Body
@@ -147,6 +150,7 @@ function Project() {
                             flexDirection: "column",
                             justifyContent: "space-between",
                             height: "300px",
+                            overflowY: "auto", // Enable scrolling
                           }}
                         >
                           <Card.Title>
@@ -165,7 +169,7 @@ function Project() {
                         </Card.Body>
                       </Card>
                     </Col>
-                    <Col md={4}>
+                    <Col xs={12} sm={6} md={4}>
                       <Card style={{ width: "100%", height: "100%" }}>
                         <Card.Img variant="top" src={cryptoList} />
                         <Card.Body
@@ -175,6 +179,7 @@ function Project() {
                             flexDirection: "column",
                             justifyContent: "space-between",
                             height: "300px",
+                            overflowY: "auto", // Enable scrolling
                           }}
                         >
                           <Card.Title>Crypto App</Card.Title>
