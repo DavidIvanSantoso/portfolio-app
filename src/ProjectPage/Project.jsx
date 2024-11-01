@@ -14,6 +14,7 @@ import FirebaseOriginal from "devicons-react/lib/icons/FirebaseOriginal";
 import PythonOriginal from "devicons-react/lib/icons/PythonOriginal";
 import XcodeOriginal from "devicons-react/lib/icons/XcodeOriginal";
 import SwiftOriginal from "devicons-react/lib/icons/SwiftOriginal";
+import GoLine from "devicons-react/lib/icons/GoLine";
 
 import { Carousel } from "react-bootstrap";
 //card-img
@@ -22,6 +23,7 @@ import iotPlatform from "../assets/platformIot1.png";
 import myCovidtest from "../assets/mycovidtest.png";
 import cryptoList from "../assets/cryptoList.png";
 import shapeRec from "../assets/shapeRec.png";
+import reUnion from "../assets/reUnion.png";
 
 function Project() {
   return (
@@ -191,6 +193,35 @@ function Project() {
                             <p>Made with:</p>
                             <SwiftOriginal color="black" size={"80"} />
                             <XcodeOriginal color="black" size={"80"} />
+                          </Row>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+                    <Col xs={12} sm={6} md={4}>
+                      <Card style={{ width: "100%", height: "100%" }}>
+                        <Card.Img variant="top" src={reUnion} />
+                        <Card.Body
+                          className="card-body-custom"
+                          style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            justifyContent: "space-between",
+                            height: "300px",
+                            overflowY: "auto", // Enable scrolling
+                          }}
+                        >
+                          <Card.Title>Re:UNION</Card.Title>
+                          <Card.Text>
+                            My personal project to introduce a pump it up
+                            community that i involved with. This main purpose of
+                            this website is showing community profile and
+                            showing scoring result and next scoring schedule!
+                          </Card.Text>
+                          <Row>
+                            <p>Made with:</p>
+                            <ReactOriginal color="black" size={"80"} />
+                            <GoLine color="black" size={"80"} />
+                            <PostgresqlOriginal color="black" size={"80"} />
                           </Row>
                         </Card.Body>
                       </Card>
