@@ -48,7 +48,7 @@ function Project() {
               <Carousel>
                 <Carousel.Item>
                   <Row>
-                    <Col xs={12} sm={6} md={4}>
+                    <Col className="my-2" xs={12} sm={6} md={4}>
                       <Card style={{ width: "100%", height: "100%" }}>
                         <Card.Img variant="top" src={tripleS} />
                         <Card.Body
@@ -75,7 +75,7 @@ function Project() {
                         </Card.Body>
                       </Card>
                     </Col>
-                    <Col xs={12} sm={6} md={4}>
+                    <Col className="my-2" xs={12} sm={6} md={4}>
                       <Card style={{ width: "100%", height: "100%" }}>
                         <Card.Img variant="top" src={iotPlatform} />
                         <Card.Body
@@ -110,7 +110,7 @@ function Project() {
                         </Card.Body>
                       </Card>
                     </Col>
-                    <Col xs={12} sm={6} md={4}>
+                    <Col className="my-2" xs={12} sm={6} md={4}>
                       <Card style={{ width: "100%", height: "100%" }}>
                         <Card.Img variant="top" src={myCovidtest} />
                         <Card.Body
@@ -142,7 +142,7 @@ function Project() {
                 {/* groupbaru */}
                 <Carousel.Item>
                   <Row>
-                    <Col xs={12} sm={6} md={4}>
+                    <Col className="my-2" xs={12} sm={6} md={4}>
                       <Card style={{ width: "100%", height: "100%" }}>
                         <Card.Img variant="top" src={shapeRec} />
                         <Card.Body
@@ -171,7 +171,7 @@ function Project() {
                         </Card.Body>
                       </Card>
                     </Col>
-                    <Col xs={12} sm={6} md={4}>
+                    <Col className="my-2" xs={12} sm={6} md={4}>
                       <Card style={{ width: "100%", height: "100%" }}>
                         <Card.Img variant="top" src={cryptoList} />
                         <Card.Body
@@ -197,7 +197,7 @@ function Project() {
                         </Card.Body>
                       </Card>
                     </Col>
-                    <Col xs={12} sm={6} md={4}>
+                    <Col className="my-2" xs={12} sm={6} md={4}>
                       <Card style={{ width: "100%", height: "100%" }}>
                         <Card.Img variant="top" src={reUnion} />
                         <Card.Body

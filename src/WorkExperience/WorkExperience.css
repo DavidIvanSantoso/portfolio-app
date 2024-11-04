@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 20px 0;
 }
 
 .project-title .line {
@@ -25,4 +26,12 @@
 .vertical-timeline-element--work:hover .vertical-timeline-element-content {
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.5); /* Customize shadow as needed */
   transition: box-shadow 0.3s ease-in-out;
+}
+@media (max-width: 576px) {
+  .line {
+    width: 80%; /* Make lines wider on small screens */
+  }
+  .project-title h1 {
+    font-size: 1.5rem; /* Smaller size for mobile */
+  }
 }

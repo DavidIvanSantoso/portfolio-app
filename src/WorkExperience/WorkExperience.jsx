@@ -17,15 +17,19 @@ function WorkExperience() {
     <>
       <Container fluid>
         <div className="work-experience pt-3">
-          <Row>
-            <div className="project-title text-center">
-              <div className="line"></div>
-              <h1>Education Background & Work Experience!</h1>
-              <div className="line"></div>
-            </div>
+          <Row className="px-3 justify-content-center">
+            <Col xs={12} md={8} className="text-center">
+              <div className="project-title">
+                <div className="line"></div>
+                <h1 className="mb-3">
+                  Education Background & Work Experience!
+                </h1>
+                <div className="line"></div>
+              </div>
+            </Col>
           </Row>
 
-          <Row className="work-tree justify-content-center">
+          <Row className="work-tree justify-content-center px-3">
             <VerticalTimeline>
               <VerticalTimelineElement
                 layout={"1-column-left"}
