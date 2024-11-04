@@ -101,13 +101,13 @@ function LandingPage() {
             </div>
           </Col>
           <Col xs={12} md={6} className="text-center text-md-start">
-            <Row>
+            <Row className="justify-content-center">
               <div className="profile-text">
                 <h1>{displayedText}</h1>
               </div>
             </Row>
-            <Row>
-              <div className="profile-intro pt-5">
+            <Row className="justify-content-center">
+              <div className="profile-intro pt-5 pr-5">
                 <h4>
                   My name is David Ivan Santoso or you can call me David!.
                 </h4>

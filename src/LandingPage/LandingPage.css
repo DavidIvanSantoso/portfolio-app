@@ -52,3 +52,11 @@ body {
     border-color: transparent; /* Blink effect */
   }
 }
+.social-media-blob:hover {
+  transform: scale(1.1); /* Scale icon on hover */
+}
+@media (max-width: 576px) {
+  .profile-text {
+    justify-content: center;
+  }
+}
