@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import { Container, Row, Col } from "react-bootstrap";
 import "../WorkExperience/WorkExperience.css";
@@ -185,6 +186,69 @@ function WorkExperience() {
                   <li>
                     Make company profile website for PT Mahkota Tirta Abadi.
                   </li>
+                </ul>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                layout={"1-column-left"}
+                className="vertical-timeline-element--work"
+                contentStyle={{
+                  background: "rgb(158, 200, 185)",
+                  color: "#092635",
+                }}
+                contentArrowStyle={{
+                  borderRight: "7px solid  rgb(158, 200, 185)",
+                }}
+                date="October 2024 - Now"
+                iconStyle={{
+                  background: "#fff",
+                  color: "#092635",
+                }}
+                icon={
+                  <img
+                    src="https://yt3.googleusercontent.com/GDt5rtVs9GkFV9rYIQQzgugQrDJ3KjgorTsdEJaqbHeFcmw8ygUg4FVMzHINEyAeelk-QCEl=s160-c-k-c0x00ffffff-no-rj"
+                    alt="Custom Icon"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      borderRadius: "50%",
+                    }}
+                  />
+                }
+              >
+                <h3 className="vertical-timeline-element-title">
+                  Freelance Fullstack Developer
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle">
+                  Friends Bakery.
+                </h4>
+                <div className="skills-pills">
+                  <span className="badge bg-success me-2">JavaScript</span>
+                  <span className="badge bg-success me-2">React</span>
+                  <span className="badge bg-success me-2">React Native</span>
+                  <span className="badge bg-success me-2">ExpressJs</span>
+                  <span className="badge bg-success me-2">PostgreSQL</span>
+                  <span className="badge bg-success me-2">UI/UX Design</span>
+                </div>
+                <ul className="pt-3">
+                  <li>
+                    Create a website using ReactJs for the HR department for
+                    recording all employees' performance and scheduling
+                    training.
+                  </li>
+                  <li>Create API using NodeJs for database manipulation</li>
+                  <li>
+                    Create a mobile application using React native for all
+                    Friend’s Bakery employees to see all of the information that
+                    they need, which is training schedule, and employees
+                    performance
+                  </li>
+                  <li>
+                    Design the UI/UX for both website and mobile application
+                  </li>
+                  <l1>
+                    Help the company to set up cloud servers using Digital Ocean
+                    service for the website, mobile application and database
+                  </l1>
                 </ul>
               </VerticalTimelineElement>
             </VerticalTimeline>
